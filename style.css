@@ -1,0 +1,382 @@
+/******************************* Font *******************************/
+h1{
+    font-size: 50px;
+    margin: 0;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 25px;
+    padding: 0;
+}
+h4{
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+p{
+    font-size: 16px;
+}
+a{
+    font-size: 16px;
+}
+li{
+    font-size: 16px;
+}
+p,a,li{
+    margin: 0;
+    padding: 0;
+}
+
+/******************************* COLOR *******************************/
+.MainContainer{
+    background: rgba(0,0,0,0.83);
+}
+header{
+    background-color: #025464;
+    color: #F8F1F1;
+}
+.EducationSkills{
+    background-color: #F8F1F1;
+}
+.ProfesionnalExp{
+    background-color: #F8F1F1;
+}
+.HobbiesProjects{
+    background-color: #025464;    
+    color: #F8F1F1;
+}
+.Frame{
+    border: 1px solid #E57C23;
+}
+.Trail, .TableTennis{  
+    border: solid 2px #E57C23;
+}
+.LeftStyle{    
+    width: 45px;    
+    margin: 10px 0px 0px 5px;
+    background-color: #E57C23;
+}
+.RightStyle{
+    width: 45px;    
+    margin: 10px 5px 0px 0px;
+    background-color: #E57C23; 
+}
+
+
+/******************************* LAYOUT *******************************/
+.SecondContainer{
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+header{
+    width: 90%; 
+    margin-left: 60px;      
+}
+header p{
+    text-align: center;    
+}
+.Info{
+    color: white;
+    text-decoration: none;
+}
+.IdentityName{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.PersonnalInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.PersonnalSVG{
+    margin-right: 5px;
+}
+.EducationSkills{
+    width: 90%;
+    margin-left: 17.25px;  
+    margin-top: 10px;
+    margin-right: 7px;
+    padding: 10px;
+    padding-left: 20px;    
+}
+.EducationSkills > div {
+    margin-right: 10px;
+      
+}
+.Education, .Skills{
+    padding: 10px 0px 10px 20px;
+}
+.ProfesionnalExp{
+    width: 90%;
+    margin-left: 10px;  
+    margin-top: 10px;
+    padding: 10px 10px 10px 20px;
+}
+.ProfesionnalExp h3{
+    padding: 0;
+}
+.Frame{
+    margin-top: 5px;
+    padding-left: 5px;
+}
+.Position{
+    padding: 0;
+}
+.HobbiesProjects{
+    width: 90%;
+    margin-left: 60px;
+    margin-top: 10px;
+    padding: 10px 0px 10px 20px;
+}
+.HobbiesProjects h3{
+    padding: 0;
+}
+.Hobbies{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.Hobbies h4, p{
+    padding: 0px 10px 0px 10px;
+}
+.Trail, .TableTennis{
+    width: 302px;    
+    border: solid 1px #E57C23;
+}
+.MainLeftStyle{
+    display: flex;   
+}
+.MainRightStyle{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/******************************* Reactivity *******************************/
+
+
+@media (min-width : 1320px){
+    .SecondContainer{
+        width: 1200px; 
+    }     
+    .EducationSkills{
+        width: 90%;
+        margin-left: 60px;  
+        margin-top: 10px;
+        margin-right: 7px;
+    }
+}
+
+@media (min-width : 1140px) and (max-width : 1319px) {
+    .SecondContainer{
+        width: 1090px; 
+    }
+    header{   
+        margin-left: 54.5px;      
+    }      
+    .EducationSkills{
+        margin-left: 54.5px; 
+    } 
+    .ProfesionnalExp{  
+        margin-left: 9.5px;
+    }   
+    .HobbiesProjects{
+        margin-left: 54.5px;
+    } 
+    .LeftStyle{    
+        width: 45px;
+        margin-left: 0px;
+    }
+    .RightStyle{    
+        width: 45px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width : 960px) and (max-width : 1139px) {
+    .SecondContainer{
+        width: 910px; 
+    }
+    header{   
+        margin-left: 44.5px;      
+    }      
+    .EducationSkills{
+        margin-left: 44.5px; 
+    }
+    .ProfesionnalExp{  
+        margin-left: 9.5px;
+    }     
+    .HobbiesProjects{
+        margin-left: 44.5px;
+    }
+    .LeftStyle{    
+        width: 35px;
+        margin-left: 0;
+    }
+    .RightStyle{    
+        width: 35px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width : 720px) and (max-width : 959px) {
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .IdentityName img{
+        height: 125px;
+    }
+    .SecondContainer{
+        width: 670px; 
+    }
+    header{   
+        margin-left: 34.5px;      
+    }
+    .PersonnalInfo{
+        flex-direction: column; 
+        gap: 0px
+    }
+    .EducationSkills{
+        margin-left: 34.5px; 
+    }  
+    .ProfesionnalExp{  
+        margin-left: 9.5px;
+    }  
+    .HobbiesProjects{
+        margin-left: 34.5px;
+    }
+    .Hobbies{
+        flex-direction: column;
+    }
+    .LeftStyle{    
+        width: 25px;
+        margin-left: 0;
+    }
+    .RightStyle{    
+        width: 25px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width : 540px) and (max-width : 719px) {
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .SecondContainer{
+        width: 490px; 
+    }
+    .IdentityName{
+        gap: 15px;
+    }
+    header{ 
+        width: 95%;  
+        margin-left: 12.25px;      
+    }    
+    .IdentityName img{
+        height: 100px;
+    }
+    .PersonnalInfo{
+        flex-direction: column;        
+        gap: 0px;
+    } 
+    .EducationSkills{
+        width: 95%; 
+        margin-right: 17.25px; 
+    } 
+    .ProfesionnalExp{  
+        width: 95%;
+        margin-left: 12.25px;
+    }   
+    .HobbiesProjects{
+        width: 95%;
+        margin-left: 17.25px;
+    }
+    .Hobbies{
+        flex-direction: column;
+    }   
+    .LeftStyle, .RightStyle{    
+        width: 0px; 
+    } 
+}
+
+@media (min-width : 320px) and (max-width : 539px) {
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+    }
+    a{
+        font-size: 12px;
+    }
+    li{
+        font-size: 12px;
+    }
+    .SecondContainer{
+        width: 300px; 
+    }
+    header{ 
+        width: 95%;  
+        margin-left: 7.5px;      
+    }    
+    .IdentityName img{
+        height: 75px;
+    }
+    .IdentityName{
+        gap: 15px;
+        margin-left: 15px;
+    }
+    .PersonnalInfo{
+        flex-direction: column;        
+        gap: 0px;
+    }
+    .EducationSkills{
+        width: 95%;
+        margin-left: 7.5px; 
+    } 
+    .ProfesionnalExp{ 
+        width: 95%; 
+        margin-left: 3px;
+    }
+    .HobbiesProjects{
+        width: 95%;
+        margin-left: 7.25px;
+    }
+    .Hobbies{
+        flex-direction: column;
+    }
+    .Trail, .TableTennis{
+        width: 227px;
+    }
+    .Hobbies img{
+        height: 150px;
+    }
+    .LeftStyle, .RightStyle{    
+        width: 0px; 
+    }
+   
+}
